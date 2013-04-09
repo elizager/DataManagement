@@ -1,0 +1,39 @@
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+  xmlns:s="library://ns.adobe.com/flex/spark" 
+  xmlns:mx="library://ns.adobe.com/flex/mx"
+  skinClass="skins.HPAppSkin"
+  creationComplete="app_creationCompleteHandler()">
+  <fx:Script>
+    <![CDATA[
+      import utils.DataUtils;
+      protected function app_creationCompleteHandler():void
+      {
+        DataUtils.transformProducts(products);
+      }
+    ]]>
+  </fx:Script>
+  
+  <fx:Declarations>
+    <fx:Model id="model" source="data/products.xml"/>
+    <s:ArrayList id="products" source="{model.product}"/>
+  </fx:Declarations>
+  
+  <s:DataGroup dataProvider="{products}" height="400"
+    width="500">
+    <s:layout>
+      <s:TileLayout/>
+    </s:layout>
+    <s:itemRenderer>
+      <fx:Component>
+        <s:ItemRenderer>
+          <s:layout>
+            <s:VerticalLayout/>
+          </s:layout>
+          <mx:Image source="assets/photos/thumbs/{data.photo}"/>
+          <s:Label text="{data.name}"/>
+        </s:ItemRenderer>
+      </fx:Component>
+    </s:itemRenderer>
+  </s:DataGroup>
+  
+</s:Application>

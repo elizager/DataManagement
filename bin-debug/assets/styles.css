@@ -1,0 +1,14 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+
+s|Label {
+  font-size:14;
+}
+s|BorderContainer {
+  backgroundColor:#6DB6C6;
+  borderColor:#84CBDA; 
+  borderWeight:5;
+  cornerRadius:15;
+  dropShadowVisible:true; 
+}

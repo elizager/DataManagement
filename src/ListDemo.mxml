@@ -1,0 +1,20 @@
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+  xmlns:s="library://ns.adobe.com/flex/spark" 
+  xmlns:mx="library://ns.adobe.com/flex/mx"
+  skinClass="skins.HPAppSkin">
+  <fx:Declarations>
+    <s:ArrayList id="products">
+      <fx:String>Azalea</fx:String>
+      <fx:String>Bougainvillea Spectabilis</fx:String>
+      <fx:String>Bonsai Tree</fx:String>
+      <fx:String>Calibrachoa Noa</fx:String>
+      <fx:String>Cymbidium Aestivum</fx:String>
+      <fx:String>Brassica Oleracea</fx:String>
+      <fx:String>Viola Penny Orange Jump Up</fx:String>
+      <fx:String>Cotula</fx:String>
+      <fx:String>Pelargonium Peltatum</fx:String>
+      <fx:String>Pansy Blue Shades</fx:String>
+    </s:ArrayList>
+  </fx:Declarations>
+  
+</s:Application>
